@@ -1,0 +1,1126 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@font-face{
+    src: url('js/EdwardianScriptITC.ttf');
+    font-family: 'edward';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+    scroll-behavior: smooth;
+}
+.a{
+    background: url('img/home.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 883px;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    transition: all 1s;
+    padding: 70px 30px 0 30px;
+}
+
+nav #logo h1{
+    font-size: 25px;
+    color: white;
+    padding-bottom: 5px;
+}
+nav #logo p{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+}
+nav.stuck{
+    background: #000000d9;
+    height: fit-content;
+    padding: 10px 30px 10px 30px;
+}
+nav ul{
+    margin-left: auto;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+nav ul button{
+    background: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px 35px;
+    font-size:12px;
+    margin-left: 70px;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+}
+nav .menu{
+    font-size: 1.5em;
+    display: none;
+}
+nav .menu .fa{
+    color: white;
+}
+
+@media (max-width:1000px){
+    section .content{
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    
+    nav ul{
+        position: fixed;
+        top:17%;
+        left: -100%;
+        background: whitesmoke;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: left 0.5s linear;
+        justify-content: space-evenly;
+    }
+  
+    nav ul li a {
+        color: black;
+    }
+    nav ul button{
+        color: #000;
+        border: 1px solid #000;
+        margin-left: 30px;
+    }
+    nav ul img{
+        width: 150px;
+        display: unset;
+    }
+    nav .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        left: 0;
+    }
+  
+}
+
+@media (max-width:500px){
+    nav{
+        padding: 20px 0 0 5px ;
+    }
+    nav ul{
+        width: 70%;
+    }
+    nav.stuck ul{
+        top: 9%;
+    }
+    nav ul button{
+        margin-left: 0;
+    }
+    nav.stuck{
+        padding: unset;
+    }
+    #logo{
+        padding-left: 10px;
+    }
+}
+input[type="checkbox"]{
+    display: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.text{
+    padding-top: 30%;
+}
+.text h2{
+    font-size: 60px;
+    color: #b49383;
+    font-family: 'edward';
+}
+.text h1{
+    font-size: 72px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.text p{
+    font-size: 16px;
+    color: #fff;;
+}
+.b{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.b .mom{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.b #kom{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.b #kom div{
+    width: 43%;
+}
+.b #kom div img{
+    width: 100%;
+}
+.b #kom1{
+    width: 40%;
+}
+.b #kom1 div{
+    margin-top: 15%;
+    width: 129%;
+    padding: 70px 0 70px 70px;
+    margin-left: -20%;
+    border: 2px solid #b49383;
+    background: #fff;
+    box-shadow: 0px 45px 70px rgba(0,0,0,0.24);
+}
+.b #kom1 div h2{
+    color: #b49383;
+    font-family: 'edward';
+    font-size: 40px;
+    font-weight: 100;
+}
+.b #kom1 div h1{
+    font-size: 50px;
+    font-weight: 100;
+    color: #232323;
+}
+.b #kom1 div p{
+    color: #636363;
+}
+.c{
+    background: url('img/video.jpg');
+    height: 70vh;
+    background-position: center;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    
+}
+.c div{
+   margin: 0;
+   position: relative;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+   color: white;
+}
+.c h1{
+    font-size: 50px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.c i{
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.d{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.d .mom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.d #kom1{
+    width: 55%;
+    z-index: -1;
+}
+.d #kom1 img{
+    width: 100%;
+}
+.d #kom{
+    width: 40%;
+}
+.d #kom #car{
+    margin-top: 15%;
+    width: 130%;
+    padding: 50px 30px 50px 30px;
+    border: 2px solid #b49383;
+    background: #fff;
+    box-shadow: 0px 45px 70px rgba(0,0,0,0.24);
+}
+.d #kom #car h2{
+    color: #b49383;
+    font-family: 'edward';
+    font-size: 40px;
+    font-weight: 100;
+}
+.d #kom #car h1{
+    font-size: 42px;
+    font-weight: 100;
+    color: #232323;
+    padding: 10px 0;
+}
+.d #kom #car div{
+    font-size: 10px;
+    color: #b49383;
+    padding-bottom: 10px;
+}
+.d #kom #car div i{
+    padding-right: 3px;
+}
+.d #kom #car h3{
+    font-weight: 100;
+    color: #232323;
+    padding: 10px 0;
+}
+.d #kom #car p{
+    font-size: 15px;
+    color: #636363;
+    padding-bottom: 20px;
+}
+.d #kom #car button{
+    background: white;
+    color: #b49383;
+    border: 1px solid #b49383;
+    margin-top: 10px;
+    padding: 10px 35px;
+    font-size:14px;
+}
+.d #kom #car  button:hover{
+    color: white;
+    border: none;
+    background: #b49383;
+}
+.e{
+    text-align: center;
+    background: #282828;
+    margin-bottom: 100px;
+    padding: 30px;
+}
+.e #si{
+    border: 2px solid #b49383;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.e #si h2{
+    color: #b49383;
+    font-family: 'edward';
+    font-size: 35px;
+    padding: 5px;
+    font-weight: 100;
+    
+}
+.e #si #div1{
+    width: 300px;
+    background: #282828;
+    margin-top: -1%;
+}
+.e #si h1{
+    color: white;
+    font-size: 40px;
+}
+.e #si #div2{
+    color: #b49383;
+    font-size: 11px;
+    padding: 5px;
+    background: #282828;
+    margin-bottom: -1%;
+    
+}
+.e #si i{
+    padding-right: 3px;
+}
+.f{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+.f .mom{
+    width: 30%;
+}
+.f #mom{
+    border: 1px solid #b49383;
+    padding: 20px;
+}
+.f .mom  button{
+    background: white;
+    color: #b49383;
+    border: 2px solid #b49383;
+    margin-top: 10px;
+    padding: 10px 35px;
+    font-size:22px;
+    margin-bottom: 30px;
+}
+.f .mom #kom{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.f .mom #kom h2{
+    font-weight: 100;
+    color: #282828;
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+.f .mom #kom p{
+    color: #636363;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.f .mom #kom a{
+    color: #b49383;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.f .mom #kom a:hover{
+    text-decoration: underline;
+}
+
+.g{
+    height: 70vh;
+    text-align: center;
+    background: url('img/reservations.jpg');
+    background-position: center;
+    padding-top: 100px;
+    background-size: cover;
+}
+.g h2{
+    color: #b49383;
+    font-family: 'edward';
+    font-size: 40px;
+    padding: 5px;
+    font-weight: 100;
+    
+}
+.g h1{
+    font-size: 45px;
+    color: white;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.g input, .g select{
+    width: 20%;
+    height: 50px;
+    background: none;
+    border: 2px solid #b49383;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.g input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+.g select option{
+    color: black;
+}
+.g button{
+    background: #b49383;
+    color: #fff;
+    border:none;
+    margin-top: 10px;
+    padding: 15px 35px;
+    font-size:17px;
+}
+.g  button:hover{
+    color: #b49383;
+    border: 2px solid #b49383;
+    background: none;
+}
+footer{
+    display: flex;
+    color: #636363;
+    background: #232323;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    font-size: 13px;
+}
+footer .one, footer .three{
+    width: 20%;
+}
+footer .two{
+    width: 45%;
+}
+footer img{
+    width: 100px;
+    height: 50px;
+}
+footer li{
+    padding-bottom: 20px;
+}
+.h{
+    background: url('img/about.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+.h .text{
+    padding-top: 20%;
+}
+.b #kom img{
+    width: 100%;
+}
+.b .kom{
+    padding-left: 50px;
+}
+.i{
+    padding: 30px 50px;
+}
+.i h2{
+    color: #b49383;
+    font-family: 'edward';
+    font-size: 40px;
+    font-weight: 100;
+}
+.i h1{
+    font-size: 45px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.i .pa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.i .pa p{
+    width: 49%;
+    line-height: 30px;
+    color: #636363;
+}
+.i .mom{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.i .mom div{
+    width: 23%;
+    text-align: center;
+}
+.i .mom div img{
+    width: 100%;
+}
+.i .mom div #con{
+    padding-top: 15%;
+}
+.i .mom div #con1{
+    padding-top: 5%;
+}
+.i .mom div #con2{
+    width: 95%;
+}
+.i .mom div h3{
+    padding: 5px 0;
+    font-size: 25px;
+    font-weight: 100;
+}
+.i .mom div p{
+    color: #636363;
+    padding-bottom: 10px;
+}
+.i button{
+    background: #b49383;
+    color: #fff;
+    border:none;
+    margin-top: 10px;
+    padding: 10px 35px;
+    font-size:17px;
+}
+.i  button:hover{
+    color: #b49383;
+    border: 2px solid #b49383;
+    background: none;
+}
+.j{
+    margin-top: 100px;
+    text-align: center;
+}
+.j .swiper-container {
+    width: 100%;
+    height: 500px;
+    margin-left: 30px;
+    background: url('img/testimonials.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+.j .swiper-container h2{
+    font-size: 40px;
+    font-family: 'edward';
+    font-weight: 100;
+    color: #b49383;
+    margin: 60px 0 20px 0;
+}
+.j .swiper-container h1{
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+ .j .swiper-slide {
+    margin-top: 20px;
+    height: 100%;
+    font-size: 18px;
+    text-align: center;
+    
+  }
+.j .swiper-slide .fa{
+    font-size: 30px;
+    margin-top: -20px;
+    color: #b49383;
+}
+.j .swiper-container .pat{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.j .swiper-container #gaf{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.j .swiper-container img{
+    margin-bottom: 20px;
+}
+.j .swiper-container  p{
+    color: #6e7580;
+}
+.j .swiper-container #gaf span{
+    color: #263246;
+    font-weight: bold;
+}
+.k{
+    background: url('img/menu.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+.k .text{
+    padding-top: 20%;
+}
+.l{
+    padding: 70px 0;
+    text-align: center;
+}
+.l h2{
+    color: #b49383;
+    font-family: 'edward';
+    font-size: 40px;
+    font-weight: 100;
+}
+.l h1{
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.l .mom{
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.l .mom p{
+    font-size: 13px;
+    color: #636363;
+    width: 45%;
+    line-height: 30px;
+}
+.l .mom2{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 0 20px 0;
+}
+
+.f .mom  img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.m{
+    margin-top: 100px;
+    padding: 70px 40px;
+    border-top: 2px solid #b49383;
+    background:#f7fafb ;
+}
+.m h2{
+    color: #b49383;
+    font-family: 'edward';
+    font-size: 40px;
+    padding: 5px;
+    font-weight: 100;
+    
+}
+.m h1{
+    font-size: 45px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.m .mom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.m .mom .mp{
+    width: 45%;
+}
+.m .mom .mp img{
+    width: 100%;
+}
+.m #car div{
+    font-size: 10px;
+    color: #b49383;
+    padding-bottom: 10px;
+}
+.m #car div i{
+    padding-right: 3px;
+}
+.m #car h3{
+    font-weight: 100;
+    color: #232323;
+    padding: 10px 0;
+}
+.m #car p{
+    font-size: 15px;
+    color: #636363;
+    padding-bottom: 20px;
+}
+.m #car button{
+    background: white;
+    color: #b49383;
+    border: 1px solid #b49383;
+    margin-top: 10px;
+    padding: 10px 35px;
+    font-size:14px;
+}
+.m #car  button:hover{
+    color: white;
+    border: none;
+    background: #b49383;
+}
+.n{
+    background: url('img/blog.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+.n .text{
+    padding-top: 20%;
+}
+.o{
+    text-align: center;
+    padding: 100px 20px;
+}
+.o .mom{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-evenly;
+}
+.o .mom .left{
+    width: 46%;
+}
+.o .mom .right{
+    width: 46%;
+    margin-top: 50px;
+}
+.o .mom .pa{
+    margin-bottom: 40px;
+}
+.o .mom .pa .po button{
+    background: white;
+    color: #282828;
+    border: 2px solid #b49383;
+    padding: 10px 35px;
+    font-size:14px;
+    margin-left: 20px;
+    z-index: 1;
+    position: relative;
+}
+.o .mom .pa .po div{
+    margin-top: -5%;
+    margin-bottom: 30px;
+}
+.o .mom .pa .po div img{
+    width: 100%;
+}
+.o .mom h1{
+    font-size: 35px;
+    font-weight: 100;
+    margin: 10px 0;
+    color: #282828;
+    cursor: pointer;
+}
+.o .mom h1:hover{
+    color: #b49383;
+}
+.o .mom a{
+    text-decoration: none;
+    color: white;
+}
+.o .mom a:hover{
+    color: #282828;
+}
+.o .mom h3{
+    color: white;
+    font-weight: 100;
+    text-transform: lowercase;
+    padding: 5px;
+    background: #b49383;
+    font-size: 19px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+.o .mom p{
+    font-size: 15px;
+    color: #636363;
+    line-height: 30px;
+}
+.o button{
+    background: #b49383;
+    color: #fff;
+    border: 2px solid #b49383;
+    padding: 10px 35px;
+    font-size:14px;
+
+}
+.o button:hover{
+    transition: all 0.5s;
+    color: #b49383;
+    background: none;
+    border: 2px solid #b49383
+}
+.p{
+    background: url('img/contact.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+.p .text{
+    padding-top: 20%;
+}
+.q{
+    padding: 70px 50px;
+}
+.q #con{
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 30px;
+    color: #232323;
+}
+.q .mom{
+    display: flex;
+    flex-wrap: wrap;
+}
+.q #poe{
+    width: 45%;
+}
+.q #poe p:nth-child(1){
+    font-size: 16px;
+    color: #636363;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.q #poe h1{
+    font-size: 50px;
+    font-weight: 100;
+    color: #232323;
+}
+.q #poe p:nth-child(3){
+    letter-spacing: 12px;
+    font-size: 20px;
+    color: #232323;
+}
+.q #poet{
+    margin-left: 20px;
+    border: 2px solid #b49383;
+    padding: 40px 70px;
+}
+.q #poet p{
+    margin-bottom: 25px;
+    color: #636363;
+}
+.q #poet p span{
+    color: #232323;
+    font-weight: bold;
+}
+.q #poet div{
+    display: flex;
+    justify-content: space-between;
+    color: #636363;
+    cursor: pointer;
+}
+.r{
+    margin: 0 30px 50px 30px;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1000px){
+.b{
+    padding: 50px 20px ;
+    margin-bottom: 30px;
+}
+.b #kom{
+    justify-content: space-between;
+}
+.b #kom, .b #kom1{
+    width: 100%;
+}
+.b #kom1 div{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0px;
+    padding: 40px 20px;
+}
+.b #kom1{
+    margin-bottom: 60px;
+}
+.b #kom div{
+    width: 48%;
+}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:800px){
+    .d #kom, .d #kom1{
+        width: 100%;
+    }
+    .d #kom{
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    .d #kom #car{
+        width: 100%;
+    }
+    .f{
+        padding: 0 20px 50px 20px;
+    }
+    .f .mom{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .l{
+        padding: 0 40px 30px 40px;
+    }
+    .l .mom p{
+        width: 100%;
+        line-height: 30px;
+    }
+    .b .kom{
+        padding-left: 0;
+    }
+    .m .mom .mp{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .q #poet{
+        width: 100%;
+        margin: 30px 10px;
+    }
+    .q #poe{
+        width: 100%;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:700px){
+    .o .mom .left{
+        width: 100%;
+    }
+    .o .mom .right{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .o .mom h3{
+        width: 100%;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:600px){
+    .a{
+        height: 500px;
+    }
+    .h, .k, .n, .p{
+        height: 400px;
+    }
+    .h .text, .k .text, .n .text, .p .text{
+        padding-top: 50%;
+    }
+    .text{
+        padding: 50% 30px 0 30px;
+    }
+    .text h2{
+        font-size: 30px;
+    }
+    .text h1{
+        font-size: 35px;
+    }
+    .text p{
+        font-size: 13px;
+    }
+    .b #kom div{
+        width: 100%;
+    }
+    .b #kom1 div h2{
+        font-size: 30px;
+    }
+    .b #kom1 div h1{
+        font-size: 36px;
+    }
+    .d #kom #car  h2{
+        font-size: 30px;
+    }
+    .d{
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .e{
+        margin-bottom: 20px;
+    }
+    .d #kom #car h1{
+        font-size: 36px;
+    }
+    .e #si #div1{
+        width: unset;
+        margin-top: -10%;
+    }
+    .e #si #div2{
+        margin-bottom: -4%;
+    }
+    .f{
+        padding: 0 10px 50px 10px;
+    }
+    .g{
+        height: fit-content;
+    }
+    .g input, .g select{
+        width: 70%;
+    }
+    .g button{
+        margin-bottom: 20px;
+    }
+    .g h2, .g h1{
+        font-size: 30px;
+    }
+    footer{
+        padding: 40px;
+    }
+    footer .one, footer .three{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    footer .two{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .i .mom div{
+        width: 100%;
+    }
+    .i .pa p{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .j .swiper-container{
+        margin-left: 0;
+    }
+    .j .swiper-container .pat{
+        font-size: 17px;
+        padding: 0 5px 0 5px;
+
+    }
+    .j .swiper-container h1{
+        font-size: 25px;
+    }
+    .j .swiper-container h2{
+        font-size: 25px;
+    }
+    .j .swiper-slide .fa {
+        font-size: 20px;
+    }
+    .l{
+        padding: 40px 20px 30px 20px;
+    }
+    .q{
+        padding: 50px 20px;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:450px){
+    .g input, .g select{
+        width: 90%;
+        margin-right: unset;
+    }
+    .i{
+        padding: 30px 20px;
+    }
+    .m h2{
+        font-size: 20px;
+        
+    }
+    .m h1{
+        font-size: 25px;
+    }
+    .m #car h3{
+        font-size: 15px;
+    }
+    .m{
+        padding: 50px 10px;
+    }
+    .l h2{
+        font-size: 20px;
+    }
+    .l h1{
+        font-size: 25px;
+    }
+    .o .mom h1 {
+        font-size: 19px;
+    }
+    .q #poet{
+        margin: 30px 0;
+        padding: 30px 20px;
+    }
+    .q #poe h1{
+        font-size: 30px;
+    }
+    .q #poe p:nth-child(3){
+        font-size: 15px;
+    }
+    .r{
+        margin: 0 10px 50px 10px;
+    }
+}
