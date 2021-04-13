@@ -2,7 +2,7 @@
 The Venue
 
 # Demo
-Here is a working live demo : https://www.thevenue.tk
+Here is a working live demo : https://venue2.netlify.app/
 
 # Description
 The Venue is a wordpress template i saw onine, i then convereted it to pure Html, CSS, and JavaScript.
